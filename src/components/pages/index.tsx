@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 
 export default function App() {
-  return <h1>hello world</h1>
+  const sample = "I'm a jon";
+  return <h1>hello world</h1>;
 }
