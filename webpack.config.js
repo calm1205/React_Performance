@@ -65,5 +65,8 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
+    client: {
+      logging: 'error',
+    },
   },
 };
