@@ -1,6 +1,11 @@
 import React from 'react';
+import { HighCost } from './HighCost';
 
 export default function App() {
-  // const sample = 'Im a jon';
-  return <h1>hello world</h1>;
+  return (
+    <>
+      <h1>hello world</h1>
+      <HighCost />
+    </>
+  );
 }
