@@ -1,11 +1,14 @@
-import React from 'react';
-import { HighCost } from './HighCost';
+import React, { useState } from 'react';
+import HighCost from '../HighCost/HighCost';
 
 export default function App() {
+  const [state, setState] = useState(0);
+  const onClick = () => setState((old) => old + 1);
+
   return (
-    <>
-      <h1>hello world</h1>
+    <div>
+      <h1 onClick={onClick}>hello world {state}</h1>
       <HighCost />
-    </>
+    </div>
   );
 }
