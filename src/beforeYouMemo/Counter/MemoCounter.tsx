@@ -11,7 +11,7 @@ const Counter: React.FC = () => {
   return (
     <>
       <button onClick={increment}>Memo Counter {count}</button>
-      <MemoLogger label="counter" />
+      <MemoLogger label="memo counter" />
     </>
   );
 };
