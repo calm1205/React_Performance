@@ -19,7 +19,7 @@ ReactDOM.render(
         <Route
           path="/highCost"
           element={
-            <MeasureRenderingTime>
+            <MeasureRenderingTime label="high cost">
               <HighCost />
             </MeasureRenderingTime>
           }

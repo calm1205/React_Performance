@@ -1,6 +1,7 @@
 import React, { ReactNode, useEffect } from 'react';
 
 type MeasureRenderingTimeType = {
+  label: string;
   children: ReactNode;
 };
 
@@ -8,6 +9,7 @@ type MeasureRenderingTimeType = {
  * コンポーネントのレンダリング時間を計測するwrapper
  */
 const MeasureRenderingTime: React.FC<MeasureRenderingTimeType> = ({
+  label,
   children,
 }) => {
   const startTime = performance.now();
@@ -15,7 +17,7 @@ const MeasureRenderingTime: React.FC<MeasureRenderingTimeType> = ({
   useEffect(() => {
     const endTime = performance.now();
     const renderTime = (endTime - startTime).toFixed(2);
-    console.log('render', renderTime, 'ms');
+    console.log(`${label} is render`, renderTime, 'ms');
   }, []);
 
   return <>{children}</>;
