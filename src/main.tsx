@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Memo } from '~/memo/Index';
 import { BeforeYouMemo } from './beforeYouMemo/Index';
 import { Router } from './router';
+import { HighCost } from './components/HighCost';
+import MeasureRenderingTime from './components/MeasureRenderingTime';
 
 const rootDOM = document.getElementById('root');
 
@@ -14,6 +16,14 @@ ReactDOM.render(
         <Route path="/" element={<Router />} />
         <Route path="/memo" element={<Memo />} />
         <Route path="/beforeYouMemo" element={<BeforeYouMemo />} />
+        <Route
+          path="/highCost"
+          element={
+            <MeasureRenderingTime>
+              <HighCost />
+            </MeasureRenderingTime>
+          }
+        />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

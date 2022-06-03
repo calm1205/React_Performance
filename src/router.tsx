@@ -7,6 +7,8 @@ export const Router: React.FC = () => {
       <Link to="/memo">memo</Link>
       <br />
       <Link to="/beforeYouMemo">beforeYouMemo</Link>
+      <br />
+      <Link to="/highCost">{"Dan's High cost components"}</Link>
     </>
   );
 };
