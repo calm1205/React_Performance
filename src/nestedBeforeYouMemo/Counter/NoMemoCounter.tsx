@@ -1,4 +1,5 @@
 import React, { ReactNode, useState } from 'react';
+import { Delay } from '~/components/Delay';
 
 type CounterType = {
   logger: ReactNode;
@@ -14,6 +15,7 @@ const Counter: React.FC<CounterType> = ({ logger }) => {
   return (
     <>
       <button onClick={increment}>No Memo Counter {count}</button>
+      <Delay />
       {logger}
     </>
   );
