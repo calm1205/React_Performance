@@ -6,6 +6,7 @@ import { BeforeYouMemo } from './beforeYouMemo/Index';
 import { Router } from './router';
 import { HighCost } from './components/HighCost';
 import MeasureRenderingTime from './components/MeasureRenderingTime';
+import { NestedBeforeYouMemo } from './nestedBeforeYouMemo/Index';
 
 const rootDOM = document.getElementById('root');
 
@@ -16,6 +17,7 @@ ReactDOM.render(
         <Route path="/" element={<Router />} />
         <Route path="/memo" element={<Memo />} />
         <Route path="/beforeYouMemo" element={<BeforeYouMemo />} />
+        <Route path="/nestedBeforeYouMemo" element={<NestedBeforeYouMemo />} />
         <Route
           path="/highCost"
           element={

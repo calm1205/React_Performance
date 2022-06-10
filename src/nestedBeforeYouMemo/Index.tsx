@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import NoMemoCounter from './Counter/NoMemoCounter';
 import { Logger } from './Logger/Logger';
 
-export const BeforeYouMemo: React.FC = () => {
+export const NestedBeforeYouMemo: React.FC = () => {
   const [count, setCount] = useState(0);
   const increment = () => setCount((c) => c + 1);
   return (

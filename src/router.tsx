@@ -8,6 +8,8 @@ export const Router: React.FC = () => {
       <br />
       <Link to="/beforeYouMemo">beforeYouMemo</Link>
       <br />
+      <Link to="/nestedBeforeYouMemo">nestedBeforeYouMemo</Link>
+      <br />
       <Link to="/highCost">{"Dan's High cost components"}</Link>
     </>
   );
