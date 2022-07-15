@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/main.tsx',
   plugins: [
     new HtmlWebpackPulgin({
-      title: 'React Sandbox',
+      title: 'React Performance',
       template: path.resolve(__dirname, 'src', 'public', 'index.html'),
     }),
   ],
@@ -15,7 +15,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  devtool: 'inline-source-map',
+  devtool: 'eval-source-map',
   module: {
     rules: [
       {

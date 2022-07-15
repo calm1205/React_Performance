@@ -9,6 +9,8 @@ export const Router: React.FC = () => {
       <Link to="/beforeYouMemo">beforeYouMemo</Link>
       <br />
       <Link to="/highCost">{"Dan's High cost components"}</Link>
+      <br />
+      <Link to="/noNeedEffect">noNeedEffect</Link>
     </>
   );
 };
